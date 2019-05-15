@@ -64,11 +64,7 @@ public class BeanWrapperImpl extends PropertyEditorRegistrySupport implements Pr
             PropertyEditor propertyEditor = propertyEditorRegistry.getCustomEditor(field.getType());
             //should be improved
             if (property.getValue() instanceof String) {
-                System.out.println("------");
-                System.out.println(propertyEditor);
                 propertyEditor.setAsText((String) property.getValue());
-                System.out.println(propertyEditor.getValue());
-                System.out.println("------");
             } else {
                 propertyEditor.setAsText(String.valueOf(property.getValue()));
             }

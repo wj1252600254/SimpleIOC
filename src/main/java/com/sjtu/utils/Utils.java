@@ -1,6 +1,8 @@
 package com.sjtu.utils;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 public class Utils {
     public static String readFile(String path) {
@@ -26,6 +28,15 @@ public class Utils {
             }
         }
         return content;
+    }
+
+    public static ArrayList<String> split(String str, String split) {
+        StringTokenizer stringTokenizer = new StringTokenizer(str, split);
+        ArrayList<String> arrayList = new ArrayList<>();
+        while (stringTokenizer.hasMoreElements()) {
+            arrayList.add(stringTokenizer.nextToken());
+        }
+        return arrayList;
     }
 
 }
