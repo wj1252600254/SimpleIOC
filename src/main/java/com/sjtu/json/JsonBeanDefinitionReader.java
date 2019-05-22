@@ -70,7 +70,6 @@ public class JsonBeanDefinitionReader implements BeanDefinitionReader {
                 }
             } else {
                 String pack = jsonObject.getString(SCAN_SCOPE);
-                System.out.println(pack);
                 BeanDefinition beanDefinition = new AnnotationBeanDefinition();
                 beanDefinition.getPropertValues().add(new PropertyValue(SCAN_SCOPE, pack));
                 try {
@@ -83,6 +82,4 @@ public class JsonBeanDefinitionReader implements BeanDefinitionReader {
             }
         }
     }
-
-
 }
