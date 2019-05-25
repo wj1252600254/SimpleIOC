@@ -3,5 +3,18 @@
     "id": "test",
     "class": "com.sjtu.utils.Utils",
     "scope": "prototype"
+  },
+  {
+    "package": "com.sjtu"
+  },
+  {
+    "id": "person",
+    "class": "com.sjtu.domain.Person",
+    "name": "WJJ",
+    "pid": "117031910031"
+  },
+  {
+    "id": "A",
+    "class": "com.sjtu.domain.A"
   }
 ]

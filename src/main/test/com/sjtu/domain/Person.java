@@ -2,14 +2,14 @@ package com.sjtu.domain;
 
 public class Person {
     private String name;
-    private String id;
+    private String pid;
 
     public Person() {
     }
 
     public Person(String name, String id) {
         this.name = name;
-        this.id = id;
+        this.pid = id;
     }
 
     public String getName() {
@@ -20,11 +20,11 @@ public class Person {
         this.name = name;
     }
 
-    public String getId() {
-        return id;
+    public String getPid() {
+        return pid;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setPid(String pid) {
+        this.pid = pid;
     }
 }

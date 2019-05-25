@@ -2,6 +2,8 @@ package com.sjtu.json;
 
 import com.sjtu.exception.NoSuchBeanDefinitionException;
 import com.sjtu.factory.DefaultListableBeanfactory;
+import com.sjtu.parsing.BeanDefinition;
+import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -9,15 +11,19 @@ public class JsonBeanDefinitionReaderTest {
 
     @Test
     public void testLoadBeanDefiniton() {
-        DefaultListableBeanfactory defaultListableBeanfactory = Mockito.mock(DefaultListableBeanfactory.class);
+        DefaultListableBeanfactory defaultListableBeanfactory = new DefaultListableBeanfactory();
         JsonBeanDefinitionReader jsonBeanDefinitionReader = new JsonBeanDefinitionReader(defaultListableBeanfactory);
-
-        DefaultListableBeanfactory defaultListableBeanfactory1 = new DefaultListableBeanfactory();
-        defaultListableBeanfactory1.initialBean("com/sjtu/test.json");
+        jsonBeanDefinitionReader.loadBeanDefiniton("com/sjtu/test.json");
+        String id = "";
+        String className = "";
+        String scope = "";
         try {
-            System.out.println(defaultListableBeanfactory1.getBeanDefinition("test").getBeanClassName());
+            id = defaultListableBeanfactory.getBeanDefinition("test").getId();
+            className = defaultListableBeanfactory.getBeanDefinition("test").getBeanClassName();
         } catch (NoSuchBeanDefinitionException e) {
             e.printStackTrace();
         }
+        Assert.assertEquals(id, "test");
+        Assert.assertEquals(className, "com.sjtu.utils.Utils");
     }
 }

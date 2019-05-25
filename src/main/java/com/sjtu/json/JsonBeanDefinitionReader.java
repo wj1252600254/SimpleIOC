@@ -64,9 +64,7 @@ public class JsonBeanDefinitionReader implements BeanDefinitionReader {
                 }
                 try {
                     this.beanDefinitionRegister.registerBeanDefinition(id, beanDefinition);
-                } catch (BeanNameEmpryException e) {
-                    e.printStackTrace();
-                } catch (BeanNameDuplicateException e) {
+                } catch (BeanNameEmpryException | BeanNameDuplicateException e) {
                     e.printStackTrace();
                 }
             } else {
@@ -75,9 +73,7 @@ public class JsonBeanDefinitionReader implements BeanDefinitionReader {
                 beanDefinition.getPropertValues().add(new PropertyValue(SCAN_SCOPE, pack));
                 try {
                     this.beanDefinitionRegister.registerBeanDefinition(SCAN_SCOPE, beanDefinition);
-                } catch (BeanNameEmpryException e) {
-                    e.printStackTrace();
-                } catch (BeanNameDuplicateException e) {
+                } catch (BeanNameEmpryException | BeanNameDuplicateException e) {
                     e.printStackTrace();
                 }
             }

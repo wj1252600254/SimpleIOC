@@ -107,7 +107,7 @@ public class DefaultListableBeanfactory extends BeanWrapperImpl implements BeanD
     @Override
     public BeanDefinition getBeanDefinition(String beanName) throws NoSuchBeanDefinitionException {
         if (!containsBeanDefination(beanName)) {
-            throw new NoSuchBeanDefinitionException(beanName + "is not exist");
+            throw new NoSuchBeanDefinitionException(beanName + " is not exist");
         }
         return beanDefinitionMap.get(beanName);
     }
