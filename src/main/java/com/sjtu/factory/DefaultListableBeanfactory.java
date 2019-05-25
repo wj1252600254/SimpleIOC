@@ -111,4 +111,13 @@ public class DefaultListableBeanfactory extends BeanWrapperImpl implements BeanD
         }
         return beanDefinitionMap.get(beanName);
     }
+
+    @Override
+    public String toString() {
+        return "DefaultListableBeanfactory{" +
+                "annotationBeanDefinitions=" + annotationBeanDefinitions +
+                ", beanDefinitionMap=" + beanDefinitionMap +
+                ", beanMap=" + beanMap +
+                '}';
+    }
 }

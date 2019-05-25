@@ -26,6 +26,7 @@ public class JsonBeanDefinitionReader implements BeanDefinitionReader {
 
     private BeanDefinitionRegistry beanDefinitionRegister;
 
+
     //DefaultListablefactory
     public JsonBeanDefinitionReader(BeanDefinitionRegistry beanDefinitionRegister) {
         this.beanDefinitionRegister = beanDefinitionRegister;

@@ -1,0 +1,7 @@
+[
+  {
+    "id": "test",
+    "class": "com.sjtu.utils.Utils",
+    "scope": "prototype"
+  }
+]
