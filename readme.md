@@ -1,5 +1,6 @@
 <h1>功能</h1>
 [![Build Status](https://travis-ci.org/wj1252600254/SimpleIOC.svg?branch=master)](https://travis-ci.org/wj1252600254/SimpleIOC)
+</br>
 
 @Inject   将容器中的实例注入到成员变量中，目前只支持成员变量
 </br>
