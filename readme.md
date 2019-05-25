@@ -1,4 +1,5 @@
 <h1>功能</h1>
+</br>
 [![Build Status](https://travis-ci.org/wj1252600254/SimpleIOC.svg?branch=master)](https://travis-ci.org/wj1252600254/SimpleIOC)
 </br>
 
