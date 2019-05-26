@@ -31,11 +31,5 @@ public class PropertyValue {
         this.value = value;
     }
 
-    @Override
-    public String toString() {
-        return "PropertyValue{" +
-                "name='" + name + '\'' +
-                ", value=" + value +
-                '}';
-    }
+
 }

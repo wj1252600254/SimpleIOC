@@ -59,13 +59,4 @@ public class GeneraticBeanDefinition implements BeanDefinition {
         return id;
     }
 
-    @Override
-    public String toString() {
-        return "GeneraticBeanDefinition{" +
-                "id='" + id + '\'' +
-                ", beanClassName='" + beanClassName + '\'' +
-                ", scope=" + scope +
-                ", propertyValues=" + propertyValues +
-                '}';
-    }
 }

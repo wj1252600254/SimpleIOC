@@ -2,10 +2,8 @@ package com.sjtu.json;
 
 import com.sjtu.exception.NoSuchBeanDefinitionException;
 import com.sjtu.factory.DefaultListableBeanfactory;
-import com.sjtu.parsing.BeanDefinition;
 import org.junit.Assert;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 public class JsonBeanDefinitionReaderTest {
 
@@ -26,4 +24,5 @@ public class JsonBeanDefinitionReaderTest {
         Assert.assertEquals(id, "test");
         Assert.assertEquals(className, "com.sjtu.utils.Utils");
     }
+
 }
