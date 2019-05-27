@@ -11,7 +11,7 @@ public class JsonBeanDefinitionReaderTest {
     public void testLoadBeanDefiniton() {
         DefaultListableBeanfactory defaultListableBeanfactory = new DefaultListableBeanfactory();
         JsonBeanDefinitionReader jsonBeanDefinitionReader = new JsonBeanDefinitionReader(defaultListableBeanfactory);
-        jsonBeanDefinitionReader.loadBeanDefiniton("com/sjtu/test.json");
+        jsonBeanDefinitionReader.loadBeanDefiniton("test.json");
         String id = "";
         String className = "";
         String scope = "";

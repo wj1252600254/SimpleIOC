@@ -6,6 +6,6 @@ public class AppContainerTest {
 
     @Test
     public void testAppContainer() {
-        AppContainer appContainer = new AppContainer("com/sjtu/test.json");
+        AppContainer appContainer = new AppContainer("test.json");
     }
 }

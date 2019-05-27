@@ -10,11 +10,11 @@ public class DefaultBeanFactoryTest {
     @Test
     public void testInitialBean() {
         DefaultListableBeanfactory defaultListableBeanfactory = Mockito.mock(DefaultListableBeanfactory.class);
-        defaultListableBeanfactory.initialBean("com/sjtu/test.json");
-        Mockito.verify(defaultListableBeanfactory, Mockito.times(1)).initialBean("com/sjtu/test.json");
+        defaultListableBeanfactory.initialBean("test.json");
+        Mockito.verify(defaultListableBeanfactory, Mockito.times(1)).initialBean("test.json");
         //测试各个函数
         DefaultListableBeanfactory defaultListableBeanfactory1 = new DefaultListableBeanfactory();
-        defaultListableBeanfactory1.initialBean("com/sjtu/test.json");
+        defaultListableBeanfactory1.initialBean("test.json");
         defaultListableBeanfactory1.containsBeanDefination("test");
         try {
             String id = defaultListableBeanfactory1.getBeanDefinition("test").getId();
